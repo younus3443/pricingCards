@@ -1,0 +1,291 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.container {
+  padding: 30px 20px;
+  max-width: 375px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  box-shadow: 10px 10px 50px rgba(145, 140, 140, 0.5);
+  background-color: hsl(240, 78%, 98%);
+  z-index: 0;
+}
+
+.top-image {
+  position: absolute;
+  top: -40px;
+  right: -195px;
+  z-index: -1;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+header h1 {
+  color: hsl(233, 13%, 49%);
+}
+
+header div {
+  color: hsl(234, 14%, 74%);
+  width: 100%;
+  max-width: 350px;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 30px;
+  padding: 48px 0;
+}
+
+.card {
+  background-color: white;
+  max-width: 330px;
+  width: 100%;
+  height: 455px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 30px;
+  box-shadow: 10px 10px 20px hsla(236, 72%, 79%, 0.171),
+    -10px -10px 20px hsla(236, 72%, 79%, 0.08);
+  border-radius: 10px;
+}
+
+.card h3 {
+  color: hsl(233, 13%, 49%);
+}
+
+.price {
+  font-size: 4rem;
+  color: hsl(232, 13%, 33%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 2px;
+}
+
+.price span {
+  font-size: 2.5rem;
+}
+
+.info {
+  height: 40%;
+  font-weight: 700;
+  color: hsl(233, 13%, 49%);
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info hr {
+  opacity: 0.6;
+}
+
+.card button {
+  letter-spacing: 1px;
+  font-size: 12px;
+  padding: 14px 0;
+  border-radius: 8px;
+  border: 1px solid white;
+  color: white;
+  background: linear-gradient(135deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+
+.card button:hover {
+  cursor: pointer;
+  border: 1px solid hsl(237, 63%, 64%);
+  background: none;
+  color: hsl(237, 63%, 64%);
+}
+
+.mid-card {
+  background: linear-gradient(135deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+
+.text-white {
+  color: white !important;
+}
+
+.mid-card button {
+  background: white;
+  border: 1px solid hsl(237, 63%, 64%);
+  color: hsl(237, 63%, 64%);
+}
+
+.mid-card button:hover {
+  border: 1px solid white;
+  color: white;
+}
+
+.bottom-image {
+  display: none;
+}
+
+.price .monthly {
+  display: none;
+}
+
+#toggle:checked ~ .card-container .price .monthly {
+  display: inline;
+}
+
+#toggle:checked ~ .card-container .price .annually {
+  display: none;
+}
+
+.switch {
+  display: inline-block;
+  width: 56px;
+  height: 32px;
+}
+
+#toggle {
+  display: none;
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  border-radius: 24px;
+  display: block;
+  cursor: pointer;
+  position: relative;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: white;
+  border-radius: 50%;
+  top: 4px;
+  left: 5px;
+  transition: 0.3s ease;
+}
+
+#toggle:checked + header div .switch .slider {
+  opacity: 0.4;
+}
+
+#toggle:checked + header div .switch .slider::before {
+  transform: translateX(22px);
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    max-width: 90%;
+    padding: 40px 30px;
+  }
+  header {
+    height: 18vh;
+  }
+  .card-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+
+  .card {
+    max-width: 310px;
+    height: 440px;
+  }
+  .mid-card {
+    height: 460px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .top-image {
+    right: -50px;
+    top: -20px;
+  }
+  .bottom-image {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .card button:hover {
+    cursor: pointer;
+    border: 1px solid hsl(237, 63%, 64%);
+    background: none;
+  }
+
+}
+
+
+@media screen and (min-width: 1024px) {
+  body {
+    height: 100vh;
+  }
+  .container {
+    max-width: 1440px;
+    height: 880px;
+  }
+  .card-container {
+    flex-direction: row;
+  }
+  .top-image {
+    right: -10px;
+  }
+  .mid-card {
+    height: 490px;
+    max-width: 340px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .bottom-image {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+}

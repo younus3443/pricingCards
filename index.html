@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Pricing component</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="top-image">
+        <img src="./images/bg-top.svg" />
+      </div>
+      <section>
+        <input type="checkbox" id="toggle" />
+
+        <header>
+          <h1>Our Pricing</h1>
+          <div>
+            <span>Annually</span>
+            <label for="toggle" class="switch">
+              <span class="slider"></span>
+            </label>
+            <span>Monthly</span>
+          </div>
+        </header>
+
+        <div class="card-container">
+          <div class="card">
+            <h3>Basic</h3>
+            <div class="price">
+              <span>&dollar;</span>
+              <div class="annually">199.99</div>
+              <div class="monthly">19.99</div>
+            </div>
+            <div class="info">
+              <hr />
+              <div>500 GB Storage</div>
+              <hr />
+              <div>2 Users Allowed</div>
+              <hr />
+              <div>Send up to 3 GB</div>
+              <hr />
+            </div>
+            <button>LEARN MORE</button>
+          </div>
+
+          <div class="card mid-card">
+            <h3 class="text-white">Professional</h3>
+            <div class="price text-white">
+              <span>&dollar;</span>
+              <div class="annually">249.99</div>
+              <div class="monthly">24.99</div>
+            </div>
+            <div class="info text-white">
+              <hr />
+              <div>1 TB Storage</div>
+              <hr />
+              <div>5 Users Allowed</div>
+              <hr />
+              <div>Send up to 10 GB</div>
+              <hr />
+            </div>
+            <button>LEARN MORE</button>
+          </div>
+
+          <div class="card">
+            <h3>Master</h3>
+            <div class="price">
+              <span>&dollar;</span>
+              <div class="annually">399.99</div>
+              <div class="monthly">39.99</div>
+            </div>
+            <div class="info">
+              <hr />
+              <div>2 TB Storage</div>
+              <hr />
+              <div>10 Users Allowed</div>
+              <hr />
+              <div>Send up to 20 GB</div>
+              <hr />
+            </div>
+            <button>LEARN MORE</button>
+          </div>
+        </div>
+      </section>
+
+      <div class="bottom-image">
+        <img src="./images/bg-bottom.svg" />
+      </div>
+    </div>
+  </body>
+</html>
