@@ -217,7 +217,10 @@ header div {
 }
 
 #toggle:checked + header div .switch .slider {
-  opacity: 0.4;
+  background: linear-gradient(135deg,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
 }
 
 #toggle:checked + header div .switch .slider::before {
