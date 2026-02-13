@@ -102,12 +102,12 @@ header div {
 }
 
 .price span {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .info {
   height: 40%;
-  font-weight: 600;
+  font-weight: 500;
   color: hsl(233, 13%, 49%);
   font-size: 15px;
   display: flex;
