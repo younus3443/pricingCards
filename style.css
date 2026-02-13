@@ -12,6 +12,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color:hsl(240, 78%, 98%)
  
 }
 
@@ -50,7 +51,8 @@ header {
 
 header h1 {
   color: hsl(233, 13%, 49%);
-  margin-top: 2rem;
+  margin-top: 1rem;
+  
 }
 
 header div {
@@ -59,11 +61,18 @@ header div {
   max-width: 350px;
   font-size: 15px;
   display: flex;
-  margin-top: 2rem;
-  justify-content: space-evenly;
+  margin-top: 1.3rem;
+  justify-content: center;
   align-items: center;
+  
 }
+.a{
+  margin-right:1.5rem
+}
+.m{
+  margin-left:1.5rem
 
+}
 .card-container {
   display: flex;
   flex-direction: column;
@@ -71,7 +80,7 @@ header div {
   align-items: center;
   row-gap: 30px;
   padding: 48px 0;
-  margin-top: 2.1rem;
+  margin-top: 1rem;
 }
 
 .card {
@@ -86,6 +95,7 @@ header div {
   box-shadow: 10px 10px 20px hsla(236, 72%, 79%, 0.171),
     -10px -10px 20px hsla(236, 72%, 79%, 0.08);
   border-radius: 10px;
+  padding-top: -1rem;
 }
 
 .card h3 {
@@ -93,16 +103,18 @@ header div {
 }
 
 .price {
-  font-size: 4.2rem;
+  font-size: 4.3rem;
   color: hsl(232, 13%, 33%);
   display: flex;
   align-items: center;
   justify-content: center;
-  column-gap: 2px;
+  column-gap: 4px;
+  margin-top: -1.6rem;
 }
 
 .price span {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  /* margin-top: -18px; */
 }
 
 .info {
@@ -111,6 +123,7 @@ header div {
   color: hsl(233, 13%, 49%);
   font-size: 15px;
   display: flex;
+  margin-top: -1.7rem;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -131,12 +144,13 @@ header div {
 }
 
 .card button {
-  letter-spacing: 1px;
-  font-size: 12px;
+  letter-spacing: 1.5px;
+  font-size: 13px;
   padding: 14px 0;
   border-radius: 8px;
   border: 1px solid white;
   color: white;
+  margin-top: -1rem;
   background: linear-gradient(135deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
 }
 
