@@ -93,7 +93,7 @@ header div {
 }
 
 .price {
-  font-size: 4.5rem;
+  font-size: 4.2rem;
   color: hsl(232, 13%, 33%);
   display: flex;
   align-items: center;
@@ -107,7 +107,7 @@ header div {
 
 .info {
   height: 40%;
-  font-weight: 500;
+  font-weight: 600;
   color: hsl(233, 13%, 49%);
   font-size: 15px;
   display: flex;
