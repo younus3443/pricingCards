@@ -282,6 +282,9 @@ header div {
   .top-image {
     right: -10px;
   }
+  .slider{
+    background: linear-gradient(135deg,  hsl(237, 63%, 64%),hsl(236, 72%, 79%));
+  }
   .mid-card {
     height: 490px;
     max-width: 340px;
