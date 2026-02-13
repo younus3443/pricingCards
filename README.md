@@ -20,9 +20,11 @@ Built using HTML and CSS with smooth transitions and gradient styling.
 
 📂 Project Structure
 
+```
 pricing-cards/
 │
 ├── images
 ├── index.html
 ├── style.css
 └── README.md
+```
